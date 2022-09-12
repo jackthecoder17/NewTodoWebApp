@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+header , main{
+    max-width: 600px;
+    width: 100%;  
+    margin:0 auto;
+}
+header{
+    margin-bottom: 1.2em;
+}
+header h1{
+    font-size: 50px;
+    margin-bottom: 1em;
+}
+#task-form{
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    margin-bottom: 1em;
+}
+#task-input{
+    outline: none;
+    flex: 50%;
+    padding: 0.9rem;
+    color: black;
+    font-size: 15px;
+}
+#task-submit{
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    flex: 1 1;
+}
+#todos .todo{
+    display: flex;
+    width: 100%;
+    margin-top: 0.8em;
+}
+.todo .content{
+    flex: 70%;
+}
+.todo .content .text{
+    font-size: 18px;
+    border: 0.3px thin black;
+    padding: 0.8em;
+    width: 100%;
+}
+.todo .actions{
+    flex: 30%;
+}
+.todo .actions button{
+    cursor: pointer;
+    padding: 1.3em;
+}
+.todo .actions i{
+    flex: 100%;
+}
