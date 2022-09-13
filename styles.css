@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Combo', cursive;
 }
 body{
     display: flex;
@@ -18,12 +22,18 @@ header{
     margin-bottom: 1.2em;
 }
 header h1{
-    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    font-style: italic;
+    margin-top: 1em;
+    font-size: 40px;
+    padding: 0.5em;
+    font-weight: 700;
     margin-bottom: 1em;
 }
 #task-form{
     width: 100%;
-    background-color: aqua;
     display: flex;
     margin-bottom: 1em;
 }
@@ -34,12 +44,20 @@ header h1{
     color: black;
     font-size: 15px;
 }
+#task-input::placeholder{
+    font-size: 20px;
+}
 #task-submit{
+    font-size: 20px;
     outline: none;
     border: none;
     background-color: black;
     color: white;
     flex: 1 1;
+}
+
+#todos{
+    margin-bottom: 1em;
 }
 #todos .todo{
     display: flex;
@@ -64,4 +82,11 @@ header h1{
 }
 .todo .actions i{
     flex: 100%;
+}
+.completed{
+    text-decoration:2px black line-through;
+    opacity: 0.7;
+}
+.display{
+    display: none;
 }
